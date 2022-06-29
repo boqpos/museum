@@ -1,0 +1,379 @@
+/*Fonts*/
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Forum;
+    src: url("assets/fonts/Forum-Regular.ttf");
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bb {border: 2px solid red;}
+html {scroll-behavior: smooth;}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.section {
+    padding: 75px 0 75px 0;
+}
+.dark-section {
+    background: black;
+}
+.video-section {
+    padding: 90px 0 75px 0;
+}
+.header {
+    background: black;
+    height: 150px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 0 62px 0;
+}
+/*LOGO*/
+.logotype {
+    display: flex;
+}
+.logo {
+    background-image: url("assets/svg/logo.svg");
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 26px;
+    margin-right: 25px;
+}
+.text {
+    text-transform: uppercase;
+    font-family: Forum, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: white;
+}
+/*NAV*/
+ul {
+    display: flex;
+    align-items: center;
+}
+ul > li {
+    margin-left: 55px;
+    list-style: none;
+}
+li > a {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+/*WELCOME*/
+.section-welcome {
+    height: 842px;
+    background: black;
+}
+.section-gallery {
+    /*padding: 75px 0 0 0;*/
+}
+/*SECTION-TITLE-WHITE*/
+.section-title {
+    font-family: Forum, sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: #9D8665;
+    text-transform: uppercase;
+}
+/*SECTION-TITLE-BLACK*/
+.section-title-dark {
+    font-family: Forum, sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+/*UNDERLINE-TITLE*/
+.underline-title {
+    position: relative;
+    height: 2px;
+    background-color: #710707;
+    width: 300px;
+}
+.underline-title::after {
+    content: "";
+    position: absolute;
+}
+/*UNDERLINES*/
+.underline-visiting {
+    margin-top: 25px;
+    margin-bottom: 75px;
+    border-bottom: #710707 3px solid;
+}
+.underline-explore {
+    margin-top: 25px;
+    margin-bottom: 75px;
+    border-bottom: #710707 3px solid;
+    width: 100%;
+}
+
+/*WELCOME-P*/
+.welcome-paragraph {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: white;
+    margin: 25px 0 75px 0;
+}
+/*WELCOME BUTTON*/
+.welcome-button > button {
+    background: #710707;
+    width: 360px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+}
+    button > a {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    line-height: 26px;
+}
+
+/*VISITING*/
+.visiting-container {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 75px;
+    column-gap: 60px;
+}
+/*VISITING-LINKS*/
+.visiting-container > a {
+    list-style: none;
+    text-decoration: none;
+}
+/*CARD-TITLE*/
+.card-title {
+    font-family: Forum, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+/*CARD-TOUR*/
+.p-tour {
+    margin-top: 10px;
+    font-family: Roboto,sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: black;
+}
+/*CARD-TEXT*/
+.p-text {
+    font-family: Roboto,sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    margin-top: 10px;
+}
+
+/*EXPLORE*/
+.explore-container {
+    display: flex;
+}
+.explore-block {
+    padding-right: 50px;
+}
+.explore-text {
+    display: grid;
+}
+.explore-text > p {
+    height: 77px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: white;
+    margin-bottom: 25px;
+}
+p > span {
+    color: #9D8665;
+}
+
+.video-title {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 75px 0;
+}
+.video-paragraph {
+    font-family: Roboto,sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: black;
+    display: block;
+    width: 720px;
+}
+.video-menu {
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#gallery {
+    background: black;
+}
+.gallery-photos {
+
+}
+.ticket-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*column-gap: 60px;*/
+}
+.ticket-container {
+    display: block;
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ticket-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: -23px;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px black solid;
+}
+.ticket-container:hover input ~ .checkmark {
+    background-color: white;
+}
+.ticket-container input:checked ~ .checkmark {
+    background-color: white;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.ticket-container input:checked ~ .checkmark:after {
+    display: block;
+}
+.ticket-container .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: black;
+}
+.ticket-type > p {
+    padding-bottom: 25px;
+}
+.ticket-button {
+    display: grid;
+    margin-top: 25px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+.ticket-type > p {
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+.ticket-amount > p {
+    font-family: Roboto,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.basic {
+    font-family: Roboto,sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: black;
+    padding-top: 25px;
+}
+.senior {
+    font-family: Roboto,sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: black;
+    padding-top: 25px;
+}
+.number {
+    all: unset;
+    width: 3em;
+    text-align: center;
+    border: 1px black solid;
+}
+.total {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-family: Roboto,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.buy-now {
+    font-family: Roboto,sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    letter-spacing: 2px;
+    background: black;
+    border: none;
+    border-radius: 2px;
+    width: 175px;
+    height: 50px;
+}
+.parallax {
+    margin: 0 auto;
+    background-image: url("assets/img/parallax 1.png");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    position: center;
+    height: 400px;
+    width: 1920px;
+}
